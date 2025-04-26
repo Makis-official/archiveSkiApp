@@ -1,0 +1,27 @@
+<header>
+    <div>
+        <img style="cursor: pointer" routerLink="/" src="./assets/backBtn.svg" alt="">
+        <img src="./assets/mainLogo.svg">
+    </div>
+</header>
+
+<div class="main">
+    <div class="description">
+        Добро пожаловать на страницу заданий! Здесь вас ждут настоящие шифры и загадки времен Второй мировой войны.
+        Проверьте свою смекалку, расшифруйте секретные сообщения и почувствуйте себя частью исторических событий. Готовы
+        ли вы принять вызов и раскрыть тайны прошлого? Время начинать!
+    </div>
+
+    <div class="allCards">
+        <div *ngFor="let card of cards" class="card">
+            <div class="card-title">{{card.title}}</div>
+            <div class="card-description">{{card.description}}</div>
+
+            <button routerLink="{{card.link}}">
+                {{card.btnName}}
+            </button>
+        </div>
+    </div>
+</div>
+
+<div style="height: 30px"></div>

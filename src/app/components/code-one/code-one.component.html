@@ -1,0 +1,46 @@
+<header>
+    <div>
+        <img style="cursor: pointer" routerLink="/allCodes" src="./assets/backBtn.svg" alt="">
+        <img src="./assets/mainLogo.svg">
+    </div>
+
+    <div class="nameCode">
+        <p>шифр цезаря</p>
+    </div>
+</header>
+
+<div class="main">
+    <div class="description">
+        Шифр Цезаря — криптографический метод работы с текстом. Он назван в честь римского императора Гая Юлия Цезаря,
+        использовавшего его для секретной переписки.
+    </div>
+
+    <div style="margin-top: 25px" class="description">
+        Принцип работы шифра Цезаря очень прост: каждая буква алфавита заменяется другой буквой на фиксированное
+        количество позиций в алфавите. Это число позиций называется ключом шифра. Например, если ключ шифра равен 3,
+        каждая буква будет заменена буквой, следующей через две позиции в алфавите. Таким образом, буква "А" станет "Г",
+        "Б" станет "Д", "В" станет "Е" и так далее.
+    </div>
+
+    <div class="task" style="margin-top: 45px">
+        <p class="title-mini">Задание: <span class="description-mini">Расшифруйте высказывание А.В. Суворова</span></p>
+    </div>
+
+    <div class="task" style="margin-top: 10px">
+        <p class="title-mini">Ключ: <span> 3</span></p>
+    </div>
+
+    <div class="task" style="margin-top: 10px">
+        <p class="title-mini">Текст: <span class="description-mini">Хвйзос е цъзрлл - озёнс е дсб</span></p>
+    </div>
+
+    <img style="margin-top: 37px" src="./assets/alphavit.svg" alt="">
+
+    <p style="font-size: 17px; margin-top: 37px">Введите расшифрованное высказывание</p>
+
+    <textarea [(ngModel)]="codeText"></textarea>
+
+    <button (click)="checkText()">ПОПРОБОВАТЬ</button>
+</div>
+
+<div style="height: 30px"></div>
