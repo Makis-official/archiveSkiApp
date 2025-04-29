@@ -1,0 +1,44 @@
+<header>
+    <div>
+        <img style="cursor: pointer" routerLink="/allCodes" src="./assets/backBtn.svg" alt="">
+        <img src="./assets/mainLogo.svg">
+    </div>
+
+    <div class="nameCode">
+        <p>азбука морзе</p>
+    </div>
+</header>
+
+<div class="main">
+    <div class="description">
+        Азбука Морзе — способ знакового кодирования, в котором буквы алфавита, цифры, знаки препинания и другие символы представляются в виде последовательностей коротких и длинных сигналов, называемых «точками» и «тире». Предназначена для передачи по последовательным каналам связи.
+    </div>
+
+    <div style="margin-top: 25px" class="description">
+        Во время Второй мировой войны азбука Морзе стала одним из основных способов передачи информации. Она позволяла принимать сигнал на дальних расстояниях и в условиях сильных радиопомех, кодировать послания вручную, а запись и воспроизведение происходили с помощью простейших устройств.
+    </div>
+
+    <div class="task" style="margin-top: 45px">
+        <p class="title-mini">Задание:
+            <span class="description-mini">Расшифруйте один из знаменитых лозунгов Великой Отечественной фойны </span>
+        </p>
+    </div>
+
+    <div class="task" style="margin-top: 10px">
+        <p class="title-mini">Текст<span class="description-mini">( / - разграничитель слов ):</span></p>
+    </div>
+
+    <div class="task" style="margin-top: 10px">
+        <p style="font-size: 23px" class="title-mini">-. .. / ---- .- --. ..- / -. .- --.. .- -..</p>
+    </div>
+
+    <img style="margin-top: 37px" src="./assets/morze.svg" alt="">
+
+    <p style="font-size: 17px; margin-top: 37px">Введите расшифрованное высказывание</p>
+
+    <textarea [(ngModel)]="codeText"></textarea>
+
+    <button (click)="checkText()">ПОПРОБОВАТЬ</button>
+</div>
+
+<div style="height: 30px"></div>

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { AllCodesComponent } from './components/all-codes/all-codes.component';
 import { CodeOneComponent } from './components/code-one/code-one.component';
+import { CodeTwoComponent } from './components/code-two/code-two.component';
 
 const routes: Routes = [
     {
@@ -19,6 +20,11 @@ const routes: Routes = [
         path: 'code-one',
         component: CodeOneComponent,
         title: 'Шифрование'
+    },
+    {
+        path: 'code-two',
+        component: CodeTwoComponent,
+        title: 'Азбука Морзе'
     },
 ];
 

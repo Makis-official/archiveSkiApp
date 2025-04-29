@@ -7,13 +7,15 @@ import { MainPageComponent } from './components/main-page/main-page.component';
 import { AllCodesComponent } from './components/all-codes/all-codes.component';
 import { CodeOneComponent } from './components/code-one/code-one.component';
 import {FormsModule} from "@angular/forms";
+import { CodeTwoComponent } from './components/code-two/code-two.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainPageComponent,
     AllCodesComponent,
-    CodeOneComponent
+    CodeOneComponent,
+    CodeTwoComponent
   ],
     imports: [
         BrowserModule,
