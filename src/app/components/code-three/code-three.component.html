@@ -1,0 +1,42 @@
+<header>
+    <div>
+        <img style="cursor: pointer" routerLink="/allCodes" src="./assets/backBtn.svg" alt="">
+        <img src="./assets/mainLogo.svg">
+    </div>
+
+    <div style="display: block; padding-top: 180px" class="nameCode">
+        <p>стегано</p><p>графия</p>
+    </div>
+</header>
+
+<div class="main">
+    <div class="description">
+        Стеганография — это метод скрытой передачи информации путем встраивания данных в другой носитель без видимых изменений.
+    </div>
+
+    <div style="margin-top: 25px" class="description">
+        Принцип работы стеганографии при встраивании информации в текст заключается в скрытии данных внутри текстового файла так, чтобы изменения оставались незаметными для человека. Это достигается за счет использования различных техник, которые не влияют на читаемость текста, но позволяют передать скрытую информацию.
+    </div>
+
+    <div class="task" style="margin-top: 45px">
+        <p class="title-mini">Задание: <span class="description-mini">Найдите скрытое сообщение внутри текста</span></p>
+    </div>
+
+    <div class="task" style="margin-top: 10px">
+        <p class="title-mini">Ключ: <span> 3</span></p>
+    </div>
+
+    <div class="task" style="margin-top: 10px">
+        <p class="title-mini">Текст: <span class="description-mini">Хвйзос е цъзрлл - озёнс е дсб</span></p>
+    </div>
+
+    <img style="margin-top: 37px" src="./assets/alphavit.svg" alt="">
+
+    <p style="font-size: 17px; margin-top: 37px">Введите расшифрованное высказывание</p>
+
+    <textarea [(ngModel)]="codeText"></textarea>
+
+    <button (click)="checkText()">ПОПРОБОВАТЬ</button>
+</div>
+
+<div style="height: 30px"></div>

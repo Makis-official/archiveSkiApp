@@ -8,6 +8,7 @@ import { AllCodesComponent } from './components/all-codes/all-codes.component';
 import { CodeOneComponent } from './components/code-one/code-one.component';
 import {FormsModule} from "@angular/forms";
 import { CodeTwoComponent } from './components/code-two/code-two.component';
+import { CodeThreeComponent } from './components/code-three/code-three.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CodeTwoComponent } from './components/code-two/code-two.component';
     MainPageComponent,
     AllCodesComponent,
     CodeOneComponent,
-    CodeTwoComponent
+    CodeTwoComponent,
+    CodeThreeComponent
   ],
     imports: [
         BrowserModule,
