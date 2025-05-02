@@ -30,7 +30,7 @@ const routes: Routes = [
     {
         path: 'code-three',
         component: CodeThreeComponent,
-        title: 'Стеганография'
+        title: 'Атбаш'
     },
 ];
 

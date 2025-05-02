@@ -8,10 +8,11 @@ import {Notify} from "notiflix";
 })
 export class CodeThreeComponent {
     public codeText: string = '';
-    public text: string = 'ни шагу назад';
+    public text: string = 'Надо быть очень смелым человеком, чтобы быть трусом в Красной Армии.';
+    public text2: string = 'Надо быть очень смелым человеком, чтобы быть трусом в Красной Армии';
 
     public checkText(): void {
-        if (this.text.toLowerCase() === this.codeText.toLowerCase().trim()) {
+        if (this.text.toLowerCase() === this.codeText.toLowerCase().trim() || this.text2.toLowerCase() === this.codeText.toLowerCase().trim()) {
             Notify.success('Поздравляю! Вы успешно расшифровали сообщение!');
         } else {
             Notify.failure('К сожалению, расшифровка некорректна!');
