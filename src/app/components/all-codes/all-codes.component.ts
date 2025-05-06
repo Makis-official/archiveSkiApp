@@ -1,11 +1,11 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
     selector: 'app-all-codes',
     templateUrl: './all-codes.component.html',
     styleUrls: ['./all-codes.component.css']
 })
-export class AllCodesComponent {
+export class AllCodesComponent implements OnInit {
 
     public cards = [
         {
@@ -26,5 +26,9 @@ export class AllCodesComponent {
             btnName: 'Попробовать',
             link: '/code-three',
         },
-    ]
+    ];
+
+    public ngOnInit() {
+        window.scrollTo(0, 0);
+    }
 }

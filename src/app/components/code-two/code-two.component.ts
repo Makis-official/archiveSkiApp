@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { Notify } from 'notiflix';
 
 @Component({
@@ -6,7 +6,7 @@ import { Notify } from 'notiflix';
   templateUrl: './code-two.component.html',
   styleUrls: ['./code-two.component.css']
 })
-export class CodeTwoComponent {
+export class CodeTwoComponent implements OnInit {
     public codeText: string = '';
     public text: string = 'ни шагу назад';
 
@@ -16,5 +16,9 @@ export class CodeTwoComponent {
         } else {
             Notify.failure('К сожалению, расшифровка некорректна!');
         }
+    }
+
+    public ngOnInit() {
+        window.scrollTo(0, 0);
     }
 }

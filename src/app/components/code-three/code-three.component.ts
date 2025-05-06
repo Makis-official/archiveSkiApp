@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Notify} from "notiflix";
 
 @Component({
@@ -6,7 +6,7 @@ import {Notify} from "notiflix";
   templateUrl: './code-three.component.html',
   styleUrls: ['./code-three.component.css']
 })
-export class CodeThreeComponent {
+export class CodeThreeComponent implements OnInit {
     public codeText: string = '';
     public text: string = 'Надо быть очень смелым человеком, чтобы быть трусом в Красной Армии.';
     public text2: string = 'Надо быть очень смелым человеком, чтобы быть трусом в Красной Армии';
@@ -17,5 +17,9 @@ export class CodeThreeComponent {
         } else {
             Notify.failure('К сожалению, расшифровка некорректна!');
         }
+    }
+
+    public ngOnInit() {
+        window.scrollTo(0, 0);
     }
 }

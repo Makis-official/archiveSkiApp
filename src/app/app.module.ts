@@ -9,6 +9,7 @@ import { CodeOneComponent } from './components/code-one/code-one.component';
 import {FormsModule} from "@angular/forms";
 import { CodeTwoComponent } from './components/code-two/code-two.component';
 import { CodeThreeComponent } from './components/code-three/code-three.component';
+import {HashLocationStrategy, LocationStrategy} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,9 @@ import { CodeThreeComponent } from './components/code-three/code-three.component
         AppRoutingModule,
         FormsModule
     ],
-  providers: [],
+  providers: [
+      { provide: LocationStrategy, useClass: HashLocationStrategy }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
